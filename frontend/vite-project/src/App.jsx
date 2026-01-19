@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Login from './layouts/Login'
 import LoginForm from './pages/Login/LoginForm'
 import RegisterForm from './pages/Login/RegisterForm'
+import Dashboard from './layouts/Dashboard'
+import { AlertProvider } from './context/alertContext'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Route index element={<LoginForm />} />
         <Route path="register" element={<RegisterForm />} />
       </Route>
+      <Route path="/dashboard" element={<Dashboard />}></Route>
     </Routes>
   )
 }

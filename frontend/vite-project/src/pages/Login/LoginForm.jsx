@@ -1,10 +1,13 @@
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
+import { Check } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 export default function LoginForm() {
+  const navigate = useNavigate()
   return (
-    <div className="bg-white/30 backdrop-blur-lg shadow-lg shadow-white/40 flex flex-col justify-center px-12 md:px-32">
+    <div className="bg-white/30 backdrop-blur-lg shadow-lg shadow-white/40 flex flex-col justify-center px-12 md:px-32 xl:px-42 2xl:px-62">
       <div className="text-center">
         <h1 className="text-4xl font-semibold text-blue-400 leading-8">
           Welcome back to Dust.
@@ -35,6 +38,8 @@ export default function LoginForm() {
             className={
               'border-blue-500 bg-white w-full border-1 text-blue-400 hover:text-blue-300 hover:bg-white'
             }
+            onClick={() => navigate('/sign/register')}
+            type={'button'}
           >
             Sign Up
           </Button>

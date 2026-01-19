@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Outlet } from 'react-router-dom'
+import { Check } from 'lucide-react'
 
 export default function Login() {
   return (
@@ -15,7 +16,7 @@ export default function Login() {
                   from-black/80 via-black/30 to-transparent w-full"
             />
             <div className="z-20">
-              <p className="text-white text-3xl font-semibold leading-12">
+              <p className="text-white text-3xl 2xl:text-4xl font-semibold leading-12">
                 "In an era that demands speed, we deliver precision."
               </p>
               <p className="text-md text-white font-semibold mt-8">Dustin</p>
